@@ -1,15 +1,17 @@
-# Eve Online Provider for Laravel Socialite
+# Eve Online Provider for Laravel Socialite (Singularity fork)
+
+This provider is forked from https://github.com/nullx27/eveonline-socialite and modified for use with the Singularity test oAuth server and API.
 
 ## Installation and config
-Install Larvel Socialite (see here: https://github.com/laravel/socialite/blob/2.0/readme.md)
+Install Laravel Socialite (see here: https://github.com/laravel/socialite/blob/2.0/readme.md)
 
-Install the eveonline socialite provider
+Install the eveonline socialite (sisi) provider
 
 ```
-composer require nullx27/eveonline-socialite
+composer require matthewpennell/eveonline-socialite-sisi
 ```
 
-Add the follwing to your .env file:
+Add the following to your .env file:
 
 ```
 EVEONLINE_CLIENT_ID=
@@ -22,7 +24,7 @@ EVEONLINE_REDIRECT=
 #### Laravel <= 5.4
 Add the following to your config/app.php
 ```
-nullx27\Socialite\EveOnline\EveOnlineServiceProvider::class,
+matthewpennell\Socialite\EveOnline\EveOnlineServiceProvider::class,
 ```
 
 #### Laravel 5.5

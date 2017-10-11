@@ -1,5 +1,5 @@
 <?php
-namespace nullx27\Socialite\EveOnline\Providers;
+namespace matthewpennell\Socialite\EveOnline\Providers;
 
 use Laravel\Socialite\Two\ProviderInterface;
 use Laravel\Socialite\Two\AbstractProvider;
@@ -19,7 +19,7 @@ class EveOnlineSocialiteProvider extends AbstractProvider implements ProviderInt
     protected function getAuthUrl($state)
     {
         return $this->buildAuthUrlFromBase(
-            'https://login.eveonline.com/oauth/authorize', $state
+            'https://sisilogin.testeveonline.com/oauth/authorize', $state
         );
     }
 
@@ -30,7 +30,7 @@ class EveOnlineSocialiteProvider extends AbstractProvider implements ProviderInt
      */
     protected function getTokenUrl()
     {
-        return 'https://login.eveonline.com/oauth/token';
+        return 'https://sisilogin.testeveonline.com/oauth/token';
     }
 
     /**
@@ -42,7 +42,7 @@ class EveOnlineSocialiteProvider extends AbstractProvider implements ProviderInt
     protected function getUserByToken($token)
     {
         $response = $this->getHttpClient()->get(
-            'https://login.eveonline.com/oauth/verify', [
+            'https://sisilogin.testeveonline.com/oauth/verify', [
             'headers' => [
                 'Authorization' => 'Bearer ' . $token
             ],

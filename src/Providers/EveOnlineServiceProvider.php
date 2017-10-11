@@ -1,6 +1,6 @@
 <?php
 
-namespace nullx27\Socialite\EveOnline\Providers;
+namespace matthewpennell\Socialite\EveOnline\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

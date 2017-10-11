@@ -1,11 +1,15 @@
 {
-    "name": "nullx27/eveonline-socialite",
-    "description": "EveOnline SSO Provider for Laravel Socialite",
+    "name": "matthewpennell/eveonline-socialite",
+    "description": "EveOnline SSO (Singularity) Provider for Laravel Socialite",
     "license": "MIT",
     "authors": [
         {
             "name": "Andre Peiffer",
             "email": "necrotex@gmail.com"
+        },
+        {
+            "name": "Matthew Pennell",
+            "email": "github@matthewpennell.com"
         }
     ],
     "require": {
@@ -15,13 +19,13 @@
     },
     "autoload": {
         "psr-4": {
-            "nullx27\\Socialite\\EveOnline\\": "src/"
+            "matthewpennell\\Socialite\\EveOnline\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "nullx27\\Socialite\\EveOnline\\Providers\\EveOnlineServiceProvider"
+                "matthewpennell\\Socialite\\EveOnline\\Providers\\EveOnlineServiceProvider"
             ]
         }
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace nullx27\Socialite\EveOnline\Traits;
+namespace matthewpennell\Socialite\EveOnline\Traits;
 
 use Exception;
 use GuzzleHttp\Client;
@@ -35,7 +35,7 @@ trait EveAuth {
     {
         // Get more detailed character data from CREST
         $httpClient = new Client();
-        $url = "https://esi.tech.ccp.is/latest/characters/{$this->user->id}/?datasource=tranquility";
+        $url = "https://esi.tech.ccp.is/latest/characters/{$this->user->id}/?datasource=singularity";
 
         try {
             $response = $httpClient->get($url);
