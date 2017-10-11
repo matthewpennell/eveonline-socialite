@@ -2,8 +2,8 @@
 
 return [
     'eveonline-sisi' => [
-        'client_id' => env('EVEONLINE_CLIENT_ID'),
-        'client_secret' => env('EVEONLINE_CLIENT_SECRET'),
-        'redirect' => env('EVEONLINE_REDIRECT'),
+        'client_id' => env('TESTEVEONLINE_CLIENT_ID'),
+        'client_secret' => env('TESTEVEONLINE_CLIENT_SECRET'),
+        'redirect' => env('TESTEVEONLINE_REDIRECT'),
     ]
 ];

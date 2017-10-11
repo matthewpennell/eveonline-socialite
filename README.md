@@ -14,12 +14,12 @@ composer require matthewpennell/eveonline-socialite-sisi
 Add the following to your .env file:
 
 ```
-EVEONLINE_CLIENT_ID=
-EVEONLINE_CLIENT_SECRET=
-EVEONLINE_REDIRECT=
+TESTEVEONLINE_CLIENT_ID=
+TESTEVEONLINE_CLIENT_SECRET=
+TESTEVEONLINE_REDIRECT=
 ```
 
-(Get your Eve Online SSO credentials here: https://developers.eveonline.com/applications/)
+(Get your Eve Online SSO credentials here: https://developers.testeveonline.com/applications/ - note that this is the Singularity version of the developers site)
 
 #### Laravel <= 5.4
 Add the following to your config/app.php

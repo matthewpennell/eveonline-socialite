@@ -1,6 +1,5 @@
 {
     "name": "matthewpennell/eveonline-socialite-sisi",
-    "version": "1.0.0-dev",
     "description": "EveOnline SSO (Singularity) Provider for Laravel Socialite",
     "license": "MIT",
     "authors": [
