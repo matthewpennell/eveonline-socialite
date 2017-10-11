@@ -1,5 +1,5 @@
 {
-    "name": "matthewpennell/eveonline-socialite",
+    "name": "matthewpennell/eveonline-socialite-sisi",
     "description": "EveOnline SSO (Singularity) Provider for Laravel Socialite",
     "license": "MIT",
     "authors": [
