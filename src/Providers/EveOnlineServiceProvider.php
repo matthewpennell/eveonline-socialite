@@ -15,9 +15,9 @@ class EveOnlineServiceProvider extends ServiceProvider
     {
         $socialite = $this->app->make('Laravel\Socialite\Contracts\Factory');
         $socialite->extend(
-            'eveonline',
+            'eveonline-sisi',
             function ($app) use ($socialite) {
-                $config = $app['config']['services.eveonline'];
+                $config = $app['config']['services.eveonline-sisi'];
                 return $socialite->buildProvider(EveOnlineSocialiteProvider::class, $config);
             }
         );

@@ -14,7 +14,7 @@ trait EveAuth {
     public function login()
     {
         try {
-            return Socialite::driver('eveonline')->redirect();
+            return Socialite::driver('eveonline-sisi')->redirect();
         } catch (Exception $e) {
             return back();
         }
@@ -23,7 +23,7 @@ trait EveAuth {
     public function callback()
     {
         try {
-            $this->user = Socialite::driver('eveonline')->user();
+            $this->user = Socialite::driver('eveonline-sisi')->user();
         } catch (InvalidStateException $e) {
             return back();
         }

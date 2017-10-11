@@ -48,7 +48,7 @@ class AuthController extends Controller
      */
     public function redirectToProvider()
     {
-        return Socialite::driver('eveonline')->redirect();
+        return Socialite::driver('eveonline-sisi')->redirect();
     }
 
     /**
@@ -58,7 +58,7 @@ class AuthController extends Controller
      */
     public function handleProviderCallback()
     {
-        $user = Socialite::driver('eveonline')->user();
+        $user = Socialite::driver('eveonline-sisi')->user();
 
         //dd($user);
     }
@@ -70,7 +70,7 @@ class AuthController extends Controller
 Once you have a user instance, you can grab a few more details about the user:
 
 ```php
-$user = Socialite::driver('eveonline')->user();
+$user = Socialite::driver('eveonline-sisi')->user();
 
 $token = $user->token;
 $expiresIn = $user->expiresIn;
